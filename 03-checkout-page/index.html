@@ -8,7 +8,7 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
+    <link rel="icon" href="./img/devchallenges.png" />
 
     <link
       rel="shortcut icon"
@@ -16,80 +16,181 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Devchallenges</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+    <link rel="stylesheet" href="style.css">
 
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>Checkout Page</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <h1>Checkout</h1>
+    <div class="container">
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+
+      <form action="">
+        <h3>Contact Information</h3>
+        
+        <label for="email">E-mail</label>
+        <div class="form__input">
+          <span class="icon material-icons">email</span>
+          <input 
+            type="text" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email..."
+          >
+        </div>
+
+        
+        <label for="phone">Phone</label>
+        <div class="form__input">
+          <span class="icon material-icons">phone</span>
+          <input 
+            type="text" 
+            id="phone" 
+            name="phone" 
+            placeholder="Enter your phone..."
+          >
+        </div>
+
+        
+
+
+
+        <h3>Shipping address</h3>
+
+        <!-- Wrapper in form item to deal with padding, the alternative was adding padding to label..? -->
+        <div class="form__item">
+          <label for="phone">Full name</label>
+          <div class="form__input">
+            <span class="icon material-icons">account_circle</span>
+            <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Your name.."
+            >
+          </div>
+        </div>
+
+        <div class="form__item">
+          <label for="phone">Address</label>
+          <div class="form__input">
+            <span class="icon material-icons">home</span>
+            <input 
+              type="text" 
+              id="address" 
+              name="address" 
+              placeholder="Your address.."
+            >
+          </div>
+        </div>
+
+        <div class="form__item">
+          <label for="phone">City</label>
+          <div class="form__input">
+            <span class="icon material-icons">location_city</span>
+            <input 
+              type="text" 
+              id="city" 
+              name="city" 
+              placeholder="Your city.."
+            >
+          </div>
+        </div>
+
+        <div class="form__item">
+          <label for="phone">Country</label>
+          <div class="form__input">
+            <span class="icon material-icons">public</span>
+            <input 
+              type="text" 
+              id="email" 
+              name="email" 
+              placeholder="Your country.."
+            >
+          </div>
+        </div>
+
+        <div class="form__item">
+          <label for="phone">Postal code</label>
+          <div class="form__input">
+            <span class="icon material-icons">markunread_mailbox</span>
+            <input 
+              type="text" 
+              id="email" 
+              name="email" 
+              placeholder="Your postal code.."
+            >
+          </div>
+        </div>
+
+        <div class="form__item">
+          <input type="checkbox" id="save" name="save">
+          <label for="save">Save this information for next time</label>
+        </div>
+        
+
+        <button class="form__button">Continue</button>
+      </form>
+
+      <div class="cart">
+
+        <div class="cart__item">
+          
+          <img src='/img/backpack.png'>
+          <div class="item__details">
+            <span class="title">Vintage Backpack</span>
+            <span class="price">$54.99</span>
+
+
+            <div class="item__quantity">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="cart__item">
+          
+          <img src='/img/backpack.png'>
+          <div class="item__details">
+            <span class="title">Vintage Backpack</span>
+            <span class="price">$54.99</span>
+
+
+            <div class="item__quantity">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="order__amount">
+          <div class="shipping">
+            <span class='order__title'>Shipping</span>
+            <span class='order__price'>$19</span>
+          </div>
+
+          <div class="total">
+            <span class="order__title">Total</span>
+            <span class="order__price">$148.98</span>
+          </div>
+        </div>
+
+
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+
     </div>
   </body>
 </html>
