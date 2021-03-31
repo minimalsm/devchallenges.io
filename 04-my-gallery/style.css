@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+:root {
+  --darkgrey: #4e5150;
+  --mediumgrey: #a9a9a9;
+  --lightgrey: #bdbdbd;
+  --whitegrey: #e5e5e5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.profilecard {
+  flex: 1 1 auto;
+  margin: 32px 0px;
+}
+
+.profilecard img {
+  display: block;
+  margin: auto;
+  margin-bottom: 16px;
+
+  width: 156px;
+  height: auto;
+
+  border-radius: 16px;
+}
+
+.profilecard__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profilecard__info .name {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--darkgrey);
+}
+
+.profilecard__info .location {
+  font-size: 14px;
+
+  color: var(--mediumgrey);
+}
+
+.profilecard__stats {
+  display: flex;
+  justify-content: center;
+  /* For now */
+  margin-top: 24px;
+}
+
+.profilecard .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--whitegrey);
+  border-radius: 12px;
+
+  padding: 16px 28px;
+  max-width: 51px;
+}
+
+.profilecard .stat .number {
+  color: var(--darkgrey);
+}
+
+.profilecard .stat .text {
+  color: var(--lightgrey);
+}
+
+.profilecard__stats .middle {
+  margin: 0 24px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images img {
+  border-radius: 12px;
+  object-fit: cover;
+
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.img1 {
+  flex: 3.2 3.2 30%;
+  /* padding-right: 3px; */
+}
+
+.img2 {
+  flex: 6.4 6.4 60%;
+}
+
+.img3 {
+  flex: 6.4 6.4 60%;
+}
+
+.img5 {
+  flex: 3.2;
+}
+
+.img6 {
+  flex: 3.2;
+}
