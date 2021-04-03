@@ -16,7 +16,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
+    <a href="https://{your-url-to-the-challenge}">
       Challenge
     </a>
   </h3>
@@ -29,6 +29,7 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
+- [How to use](#how-to-use)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -57,8 +58,11 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application to complete the following user stories:
 
+- [x] User story: This is a completed user stories
+- [ ] User story: This is a incompleted user stories
+- [ ] User story: This is a incompleted 2nd user stories
 
 ## How To Use
 
